@@ -6,10 +6,10 @@ public class Main {
         Console.print("Hello, welcome to this script");
 
         // make new student
-        Student student1 = new Student ("Gianni Meesters", 18,80860, "Anything that let's us make stuff");
+        Student student1 = new Student ("Gianni Meesters", 18,80860, "Any subject about writing messed up code");
 
         // make second student
-        Student student2 = new Student ("Tim Kardol", 19, 10000, "Zeelandbrug");
+        Student student2 = new Student ("Tim Kardol", 20, 10000, "Zeelandbrug");
 
         School hz = new School("HZ");
 
@@ -18,8 +18,11 @@ public class Main {
 
         Console.print(hz.listStudentPasses());
 
-        FacebookPage facebookPage = new FacebookPage(student1);
+        Facebook facebook = new Facebook();
 
-        facebookPage.printFacebookPage();
+        FacebookPage facebookPage = new FacebookPage(student1, facebook);
+        FacebookPage facebookPage2 = new FacebookPage(student2, facebook);
+
+        facebook.listPages();
     }
 }

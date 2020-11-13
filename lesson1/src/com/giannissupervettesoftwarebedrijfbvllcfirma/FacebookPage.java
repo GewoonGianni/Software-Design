@@ -3,8 +3,9 @@ package com.giannissupervettesoftwarebedrijfbvllcfirma;
 public class FacebookPage {
     private Student student;
 
-    public FacebookPage(Student student){
+    public FacebookPage(Student student, Facebook facebook){
         this.student = student;
+        facebook.addPage(this);
     }
 
     public void printFacebookPage() {
