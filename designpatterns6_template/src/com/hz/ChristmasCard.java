@@ -1,31 +1,19 @@
 package com.hz;
 
-public class ChristmasCard implements Card{
-    private Printer printer;
+public class ChristmasCard extends Card{
 
     public ChristmasCard(Printer printer) {
-        this.printer = printer;
+        super(printer);
     }
 
-    @Override
-    public void print() {
-        this.printHeader();
-        this.printMessage();
-        this.printImage();
-        this.printFooter();
-    }
-
-    @Override
     public void printHeader() {
         this.printer.printLine("--@--@--@----@----@--@----@----@--@--@--");
     }
 
-    @Override
     public void printMessage() {
         this.printer.printLine("Merry Christmas!");
     }
 
-    @Override
     public void printImage() {
         this.printer.printLine("           *             ,");
         this.printer.printLine("                       _/^\\_");
@@ -53,7 +41,6 @@ public class ChristmasCard implements Card{
         this.printer.printLine("                 `\"\"\"` `");
     }
 
-    @Override
     public void printFooter() {
         this.printer.printLine("--@--@--@----@----@--@----@----@--@--@--");
     }

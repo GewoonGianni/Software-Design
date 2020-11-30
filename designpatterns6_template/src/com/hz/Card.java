@@ -1,14 +1,22 @@
 package com.hz;
 
-public interface Card {
+public abstract class Card {
 
-    void print();
+    protected Printer printer;
 
-    void printHeader();
+    public Card(Printer printer) {
+        this.printer = printer;
+    }
 
-    void printMessage();
+    public void print() {
+        this.printHeader();
+        this.printMessage();
+        this.printImage();
+        this.printFooter();
+    }
 
-    void printImage();
-
-    void printFooter();
+    abstract void printHeader();
+    abstract void printMessage();
+    abstract void printImage();
+    abstract void printFooter();
 }

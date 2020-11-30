@@ -1,17 +1,9 @@
 package com.hz;
 
-public class HighSchoolGraduationCard implements Card {
-    private Printer printer;
+public class HighSchoolGraduationCard extends Card {
 
     public HighSchoolGraduationCard(Printer printer) {
-        this.printer = printer;
-    }
-
-    public void print() {
-        this.printHeader();
-        this.printMessage();
-        this.printImage();
-        this.printFooter();
+        super(printer);
     }
 
     public void printHeader() {
