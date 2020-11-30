@@ -27,7 +27,7 @@ public class CdPlayer {
     public void play(String title) {
         this.title = title;
         currentTrack = 0;
-        System.out.println(description + " playing \"" + title + "\"");
+        System.out.println(description + " this is sad playing \"" + title + "\"");
     }
 
     public void play(int track) {
