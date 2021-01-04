@@ -13,6 +13,11 @@ public class Main {
         gianni.subscribe(kees);
         gianni.subscribe(marie);
 
+        Student gianniStudent = new Gianni();
+        gianni.subscribe(gianniStudent);
+
         gianni.teach();
+
+        gianni.unsubscribe(gianniStudent);
     }
 }
