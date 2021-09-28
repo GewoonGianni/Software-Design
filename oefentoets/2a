@@ -1,0 +1,1 @@
+adapter, hierbij doe je niks aan je code of je api, je zet er een class tussen die in dit geval je json naar xml omzet met het grote voordeel dat je oude werkende code kan houden.

@@ -1,0 +1,1 @@
+introduce null-object. hiermee voeg je default behaviour toe voor een null ipv steeds checken of het null is.

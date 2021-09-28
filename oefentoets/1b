@@ -1,0 +1,1 @@
+VirtualDatabaseResultset doet alsof het een service object is. hierdoor hoeft de server niet steeds belast te worden met een request van nieuwe data.
